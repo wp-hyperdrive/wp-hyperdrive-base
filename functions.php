@@ -1,11 +1,13 @@
 <?php
 
 use Hyperdrive\AdminPages\Models\AdminPage;
-use Hyperdrive\Core\Bootstrap;
+use Hyperdrive\AdminPages\Bootstrap as AdminPages;
+use Hyperdrive\Core\Bootstrap as Core;
 
 defined('ABSPATH') or die('That\'s not how the Force works!');
 
-Bootstrap::load();
+Core::load();
+AdminPages::load();
 
 add_filter(
     'wp_hyperdrive_admin_pages',
